@@ -57,9 +57,9 @@ model = pickle.load(open('model.pkl', 'rb'))
 # Streamlit UI(simple ui with text space and predict button)
 st.title("Email/SMS Spam Classifier")
 
-input_sms = st.text_area("Enter the message")
+input_sms = st.text_area("Enter the message", height=250, placeholder="Type your message here...")
 
-predict_button = st.button("Predict")
+predict_button = st.button("Predict", key="predict_button")
 
 if input_sms:
     # Preprocess
