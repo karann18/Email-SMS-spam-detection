@@ -74,6 +74,10 @@ if input_sms:
     # Display result
     if result == 1:
         st.header("Spam")
+        st.error("🚨 this message is not safe!")
     else:
         st.header("Not Spam")
+        st.success("✅ This message is safe.")
 
+
+        
